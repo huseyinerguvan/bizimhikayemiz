@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bizim Hikayemiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- 1) Başlat Butonu -->
+    <div id="button-container" class="button-container">
+      <button id="start-button" class="primary-btn">Tıkla Sevgilim 💞</button>
+    </div>
+
+    <!-- 2) Aşkımız Yükleniyor -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+      <p>💗 Aşkımız yükleniyor...</p>
+      <div class="loader" role="status" aria-hidden="true"></div>
+    </div>
+
+    <!-- 3) Fotoğraf 1 -->
+    <div id="photo1-screen" class="photo-screen" aria-hidden="true">
+      <img id="photo1" src="fotoğraf1.jpg" alt="Fotoğraf 1" class="main-photo" />
+      <p class="hint-text">Beğendiysen <strong>yukarı kaydır</strong></p>
+    </div>
+
+    <!-- 4) Fotoğraf 1 - Not & Sağa Kaydır Mesaj -->
+    <div id="photo1-note" class="note-screen" aria-hidden="true">
+      <p class="note">Nefes almak için pencereyi değil de, fotoğraflarını açtığımda anladım sana yenildiğimi.</p>
+      <p class="pink-hint">( Sağa kaydır, bakalım ne olacak! )</p>
+    </div>
+
+    <!-- 5) Fotoğraf 2 -->
+    <div id="photo2-screen" class="photo-screen" aria-hidden="true">
+      <img id="photo2" src="fotoğraf2.jpg" alt="Fotoğraf 2" class="main-photo" />
+      <div class="note-block">
+        <p class="note">Bu sözü hatırlıyor musun? İlk hediye aldığımda sana bu notu yazdırtmıştım. Şimdi ise bu site bizim dijital hatıramız olsun istedim. Seni çok seviyorum güzel sevgilim.</p>
+        <button id="ready-button" class="glow-btn">Hazırsan devam edelim 💞</button>
+      </div>
+    </div>
+
+    <!-- 6) Slayt Gösterisi -->
+    <div id="slideshow-container" class="slideshow-container" aria-hidden="true">
+      <div class="slideshow">
+        <img class="slide" src="foto1.jpg" alt="Slayt 1" />
+        <img class="slide" src="foto2.jpg" alt="Slayt 2" />
+        <img class="slide" src="foto3.jpg" alt="Slayt 3" />
+        <img class="slide" src="foto4.jpg" alt="Slayt 4" />
+        <img class="slide" src="foto5.jpg" alt="Slayt 5" />
+        <img class="slide" src="foto6.jpg" alt="Slayt 6" />
+        <img class="slide" src="foto7.jpg" alt="Slayt 7" />
+        <img class="slide" src="foto8.jpg" alt="Slayt 8" />
+        <img class="slide" src="foto9.jpg" alt="Slayt 9" />
+        <img class="slide" src="foto10.jpg" alt="Slayt 10" />
+      </div>
+      <audio id="love-song" src="sonarzum.mp3"></audio>
+    </div>
+
+    <!-- 7) Final Sahnesi -->
+    <div id="end-scene" class="end-scene" aria-hidden="true">
+      <div class="fade-layer"></div>
+      <div class="heart">❤</div>
+      <div class="names">Hüseyin ❤ Azra</div>
+      <div class="credits">
+        <p>Yönetmen: Hüseyin</p>
+        <p>Başrol: Azra</p>
+        <p>Müzik: Nilüfer – Son Arzum</p>
+        <p>Yapım: Biz</p>
+      </div>
+      <div class="the-end">Seni Seviyorum.</div>
+    </div>
+
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
